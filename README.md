@@ -34,6 +34,7 @@ It allows users to **add**, **view**, **edit** and **manage tasks** in real-time
 ---
 
 ## 🗂️ Project Structure
+```
 toDoList_fullstack/
 ├── modules/
 │ └── schema.js # Mongoose model for tasks
@@ -43,3 +44,4 @@ toDoList_fullstack/
 │ └── todolist.js # Client-side JS
 ├── toDoExpress.js # Main Express server
 ├── package.json
+```
