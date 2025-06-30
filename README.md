@@ -44,4 +44,5 @@ toDoList_fullstack/
 │ └── todolist.js # Client-side JS
 ├── toDoExpress.js # Main Express server
 ├── package.json
+├── package-lock.json
 ```
