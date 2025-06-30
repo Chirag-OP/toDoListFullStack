@@ -135,10 +135,4 @@ async function updateDatabase(value,container,checked=false, del=false){
 }
 htmlReader();
 loadTasks();
-//more things to add:
-//1. better mobile spacing using @media for max-width 600px
-//2. local storage integration using backend
-//3. use google fonts
 
-//To-Do List Web App – HTML, CSS, JavaScript
-//Built a responsive to-do list with dynamic task creation, status tracking, deletion, inline editing, and localStorage-based persistence.
