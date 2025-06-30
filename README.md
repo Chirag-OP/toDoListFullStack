@@ -11,6 +11,7 @@ It allows users to **add**, **view**, **edit** and **manage tasks** in real-time
 ---
 
 ## 🚀 Features
+> ⚠️ Note: This version does **not include user authentication or data separation**. All tasks are stored globally and are visible to anyone using the app. A future update may include user-based task distinction.
 
 - Add new tasks with a simple input field
 - Display all current tasks
