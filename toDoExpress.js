@@ -9,7 +9,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname=path.dirname(__filename);
 const port = process.env.PORT || 3000;
 
-mongoose.connect("your_mongo_uri_here");
+// mongoose.connect("your_mongo_uri_here");  -- for local mongoose database personal use as data is still not unique for users 
+mongoose.connect(process.env.MONGO_URI, {        // cloud deployment
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log("MongoDB connected"))
+.catch((err) => console.error("MongoDB connection error:", err));
 
 app.use(express.static('public')); 
 app.use(express.json());
