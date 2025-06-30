@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: black;
+    color: whitesmoke;
+}
+h1{
+    text-align: center;
+    border: 20px;
+    padding: 20px;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 20px;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;  
+}
+.task{
+    display: flex;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    min-height: 50px;
+    margin: 5px;
+    align-self: stretch;
+    position: relative;
+    flex-direction: row;
+}
+p{
+    padding: 14px;
+    padding-left: 30px;
+    margin: 0px;
+}
+.done{
+    border: none;
+    position: absolute;
+    left: 8px;
+    top: 21px;
+}
+.myclass{
+    display: flex;
+    flex-direction: row;
+    width: 590px;;
+}
+.crossButton{
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    color: #ec0000;
+    border-color: #ec0000;
+}
+.crossButton:hover{
+    border-color: #ff0000;
+    background-color: #ff0000;
+}
