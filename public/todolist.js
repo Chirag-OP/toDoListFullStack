@@ -44,6 +44,15 @@ function addDelButton(cross,inp,val,container){
             cross.parentElement.remove();
             updateDatabase(val,container,true,true);
         }
+        else{
+            let newVal = confirm("The task is not completed yet, Are u sure u want to delete it");
+            if(newVal) {
+                cross.parentElement.remove();
+                updateDatabase(val,container,true,true);
+                count-=1;
+                updateTasksLeft(count);
+            }
+        }
     })
 }
 
